@@ -1,22 +1,11 @@
 import tkinter as tk
+import pygubu
 from tkinter import ttk
 class Gui():
     def __init__(self):
-        pass
+        self.builder = builder = pygubu.Builder()
+        builder.add_from_file(r'C:\Users\nara-\Desktop\KeyboardEventtoUse\KeyboardEventtoUse\x.ui')
+        self.mainwindows = builder.get_object('Frame_1')
+        
     def Draw_Gui(self):
-        window= tk.Tk()
-        window.geometry("500x250")
-        window.title("KeyBoard")
-        labelTop = tk.Label(window,
-                    text = "เลือก Key")
-        labelTop.grid(column=0, row=0)
-        mykey = []
-        for i in range(0,9):
-            mykey.append(i)
-        cmb = ttk.Combobox(window,values=mykey,state="readonly")
-        cmb.grid(column=0, row=1)
-        cmb.current(1)
-        cmb.bind("<<ComboboxSelected>>", self.callbackFunc)
-        window.mainloop()    
-    def callbackFunc(self,event):
-        print("print ok")                 
+        self.mainwindows.mainloop()

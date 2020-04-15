@@ -1,0 +1,56 @@
+<?xml version='1.0' encoding='utf-8'?>
+<interface>
+  <object class="ttk.Frame" id="Frame_1">
+    <property name="height">500</property>
+    <property name="width">500</property>
+    <bind add="" handler="callback" sequence="&lt;1&gt;" />
+    <layout>
+      <property name="column">0</property>
+      <property name="propagate">True</property>
+      <property name="row">0</property>
+      <property name="sticky">e</property>
+    </layout>
+    <child>
+      <object class="tk.Label" id="เลือกดีๆครับ :">
+        <property name="compound">top</property>
+        <property name="text" translatable="yes">เลือกเอาครับผม</property>
+        <layout>
+          <property name="column">0</property>
+          <property name="propagate">True</property>
+          <property name="row">0</property>
+        </layout>
+      </object>
+    </child>
+    <child>
+      <object class="ttk.Combobox" id="Combobox_1">
+        <property name="cursor">arrow</property>
+        <property name="exportselection">false</property>
+        <property name="state">normal</property>
+        <property name="width">33</property>
+        <layout>
+          <property name="column">1</property>
+          <property name="propagate">False</property>
+          <property name="row">0</property>
+          <property name="sticky">sew</property>
+        </layout>
+      </object>
+    </child>
+    <child>
+      <object class="tk.Button" id="Button_1">
+        <property name="image">01.jpg</property>
+        <property name="justify">left</property>
+        <property name="padx">4</property>
+        <property name="pady">6</property>
+        <property name="repeatdelay">500</property>
+        <property name="text" translatable="yes">save
+</property>
+        <layout>
+          <property name="column">1</property>
+          <property name="propagate">True</property>
+          <property name="row">1</property>
+          <property name="sticky">sew</property>
+        </layout>
+      </object>
+    </child>
+  </object>
+</interface>
